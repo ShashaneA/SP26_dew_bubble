@@ -1,3 +1,6 @@
+import numpy as np 
+# change number 1
+
 def antoine( a, T):
     # Ps = antoine( a, T)
     #
@@ -21,6 +24,10 @@ def antoine( a, T):
     # Code originally by: James C. Sutherland
     # Modified by: Tyler R. Josephson
     # Changed comment
+    
+    a=np.asarray(a,dtype=float)
+    T=np.asarray(T, dtype=float)
+    # change number 2, making a and T into arrays
     
     Ps = 10.0**( a[:,0] - a[:,1] / ( a[:,2] + T ) )
     return Ps
