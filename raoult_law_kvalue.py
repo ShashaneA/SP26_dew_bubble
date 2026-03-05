@@ -1,7 +1,7 @@
 from antoine import antoine
 import numpy as np
 
-def raoult_law_kvalue( T, P, a, *gamma):
+def raoult_law_kvalue( T, P, a, * gamma):
     # Calculates the equilibrium coefficient from Raoult's law
     # INPUTS:
     #
@@ -31,7 +31,7 @@ def raoult_law_kvalue( T, P, a, *gamma):
     
     ns,nc = a.shape
     # makes np array of zeros
-    K = np.zeros(ns) 
+    K = np.zeros(ns) # This line initializes K values
     Ps = antoine(a, T)  
     K = Ps/P
     if gamma:
