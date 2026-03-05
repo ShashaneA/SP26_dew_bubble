@@ -1,4 +1,4 @@
-import numpy as np.numpy 
+import numpy as np
 # change number 1
 
 def antoine( a, T):
