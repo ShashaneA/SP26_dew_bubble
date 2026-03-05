@@ -25,8 +25,8 @@ def antoine( a, T):
     # Modified by: Tyler R. Josephson
     # Changed comment
     
-    a=np.asarray(a,dtype=float)
-    T=np.asarray(T, dtype=float)
+    a=np.asarray(a,dtype=int)
+    T=np.asarray(T, dtype=int)
     # change number 2, making a and T into arrays
     
     Ps = 10.0**( a[:,0] - a[:,1] / ( a[:,2] + T ) )
